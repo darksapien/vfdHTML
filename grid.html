@@ -1,0 +1,59 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Grid of 35 Squares</title>
+    <style>
+        body {
+            display: flex;
+            flex-direction: column;
+            justify-content: center;
+            align-items: center;
+            min-height: 100vh;
+            margin: 0;
+            font-family: Arial, sans-serif;
+            background-color: #f4f4f4;
+        }
+        .grid-container {
+            display: grid;
+            grid-template-columns: repeat(5, 4rem);
+            grid-gap: 1rem;
+        }
+        .grid-item {
+            width: 4rem;
+            height: 4rem;
+            background-color: #3498db;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            color: white;
+            font-weight: bold;
+            border-radius: 0.5rem;
+        }
+        .extra-row {
+            margin-top: 2rem;
+            width: calc(5 * 4rem + 4 * 1rem);
+            height: 4rem;
+            background-color: #3498db;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            color: white;
+            font-weight: bold;
+            border-radius: 0.5rem;
+        }
+    </style>
+</head>
+<body>
+    <div class="grid-container">
+        <!-- Generate 35 boxes dynamically -->
+        <script>
+            for (let i = 1; i <= 35; i++) {
+                document.write(`<div class='grid-item'>${i}</div>`);
+            }
+        </script>
+    </div>
+    <div class="extra-row">Extra Box</div>
+</body>
+</html>
