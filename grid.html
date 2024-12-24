@@ -27,8 +27,6 @@
             display: flex;
             justify-content: center;
             align-items: center;
-            color: white;
-            font-weight: bold;
             border-radius: 0.5rem;
         }
         .extra-row {
@@ -39,21 +37,18 @@
             display: flex;
             justify-content: center;
             align-items: center;
-            color: white;
-            font-weight: bold;
             border-radius: 0.5rem;
         }
     </style>
 </head>
 <body>
     <div class="grid-container">
-        <!-- Generate 35 boxes dynamically -->
         <script>
             for (let i = 1; i <= 35; i++) {
-                document.write(`<div class='grid-item'>${i}</div>`);
+                document.write('<div class="grid-item"></div>');
             }
         </script>
     </div>
-    <div class="extra-row">Extra Box</div>
+    <div class="extra-row"></div>
 </body>
 </html>
